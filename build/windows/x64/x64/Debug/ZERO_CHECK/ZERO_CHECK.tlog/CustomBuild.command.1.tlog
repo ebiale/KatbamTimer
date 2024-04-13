@@ -1,0 +1,10 @@
+^C:\USERS\ELENA.BIALYK\WORKSPACE\FLUTTER\FLUTTER\COUNT_DOWN\BUILD\WINDOWS\X64\CMAKEFILES\38BE2D097F5E524184A17F4821D42F2D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/elena.bialyk/Workspace/Flutter/Flutter/count_down/windows -BC:/Users/elena.bialyk/Workspace/Flutter/Flutter/count_down/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/elena.bialyk/Workspace/Flutter/Flutter/count_down/build/windows/x64/count_down.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,28 @@
+^C:\USERS\ELENA.BIALYK\WORKSPACE\FLUTTER\FLUTTER\COUNT_DOWN\BUILD\WINDOWS\X64\CMAKEFILES\6D6AC3B78B31C2E053E9D7AEEACD85ED\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\flutter PROJECT_DIR=C:\Users\elena.bialyk\Workspace\Flutter\Flutter\count_down FLUTTER_ROOT=C:\flutter FLUTTER_EPHEMERAL_DIR=C:\Users\elena.bialyk\Workspace\Flutter\Flutter\count_down\windows\flutter\ephemeral PROJECT_DIR=C:\Users\elena.bialyk\Workspace\Flutter\Flutter\count_down FLUTTER_TARGET=C:\Users\elena.bialyk\Workspace\Flutter\Flutter\count_down\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9lNzZjOTU2NDk4ODQxZTFhYjQ1ODU3N2QzODkyMDAzZTU1M2U0ZjNjLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\Users\elena.bialyk\Workspace\Flutter\Flutter\count_down\.dart_tool\package_config.json C:/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ELENA.BIALYK\WORKSPACE\FLUTTER\FLUTTER\COUNT_DOWN\BUILD\WINDOWS\X64\CMAKEFILES\6A34F79BB4D62DC1F129E2615EBCBCB0\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\ELENA.BIALYK\WORKSPACE\FLUTTER\FLUTTER\COUNT_DOWN\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/elena.bialyk/Workspace/Flutter/Flutter/count_down/windows -BC:/Users/elena.bialyk/Workspace/Flutter/Flutter/count_down/build/windows/x64 --check-stamp-file C:/Users/elena.bialyk/Workspace/Flutter/Flutter/count_down/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

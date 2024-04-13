@@ -1,0 +1,1 @@
+ C:\\Users\\elena.bialyk\\Workspace\\Flutter\\Flutter\\count_down\\.dart_tool\\flutter_build\\af57e2db151b58c179cda2ab5449079e\\native_assets.yaml: 

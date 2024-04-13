@@ -1,5 +1,3 @@
-// ignore_for_file: use_key_in_widget_constructors, library_private_types_in_public_api
-
 import 'dart:async';
 import 'package:flutter/material.dart';
 
@@ -31,6 +29,9 @@ class _CountdownScreenState extends State<CountdownScreen> {
   late Duration _difference;
   late Timer _timer;
 
+  bool _isRed = false;
+  bool _isBlinking = false;
+
   @override
   void initState() {
     super.initState();
@@ -56,6 +57,14 @@ class _CountdownScreenState extends State<CountdownScreen> {
             timer.cancel();
           } else {
             _difference -= const Duration(seconds: 1);
+
+            if (_difference.inMinutes == 10 && !_isRed) {
+              _isRed = true;
+              _isBlinking = false;
+            } else if (_difference.inMinutes == 5 && !_isBlinking) {
+              _isRed = false;
+              _isBlinking = true;
+            }
           }
         });
       },
@@ -78,9 +87,10 @@ class _CountdownScreenState extends State<CountdownScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
+        title: Text(
           "כטב''ם דואון",
-          style: TextStyle(fontSize: 50),
+          style: TextStyle(
+              fontSize: 50, color: _isRed ? Colors.red : Colors.black),
         ),
         centerTitle: true,
       ),
@@ -90,7 +100,12 @@ class _CountdownScreenState extends State<CountdownScreen> {
           children: <Widget>[
             Text(
               _formatDuration(_difference),
-              style: const TextStyle(fontSize: 140),
+              style: TextStyle(
+                fontSize: 140,
+                color: _isRed
+                    ? Colors.red
+                    : (_isBlinking ? Colors.blue : Colors.black),
+              ),
             ),
           ],
         ),
